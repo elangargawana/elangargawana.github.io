@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Overpass, sans-serif;
+    font-size: 18px;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+    padding: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 3px #d0d0d0;
+    z-index: 9999;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 50px;
+}
+
+.navlogo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+nav .navbar > ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav .navbar > ul li a {
+    color: black;
+    transition: all .2s ease-in-out;
+    font-size: 16px;
+}
+
+nav .navbar > ul li:hover a {
+    color: #02a6e3;
+}
+/* Navbar End */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    background-color: #f1f5f9;
+}
+
+/* About */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 80px;
+    padding-inline: 50px;
+    background-color: white;
+    padding-block: 100px;
+}
+
+.about article > div.judul > h1 {
+    margin-bottom: 15px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.about > article {
+    text-align: justify;
+    flex-basis: 55%;
+}
+
+.about > aside.fotoprofil {
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+    height: 300px;
+}
+
+.about aside.fotoprofil > img {
+    border-radius: 80px 0px 80px;
+    transition: all .2s ease-in-out;
+    width: 100%;
+}
+
+.about aside.fotoprofil > img:hover {
+    opacity: 0.75;
+}
+/* About End */
+
+/* Social Media */
+main aside .social-media {
+    height: 100%;
+    display: flex;
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #2D3E50;
+   
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+main aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+   
+main aside .social-media li a:hover {
+    color: #02a6e3;
+}
+/* Social Media End */
+
+/* Portfolio */
+section.portfolio {
+    background-color: #f1f5f9;
+    margin-inline: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.judulportfolio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 30px;
+}
+
+.judulportfolio > p {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.portfolio > .konten {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.portfolio article > .konten {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.konten .tanggalkonten {
+    color: #bdbdbd;
+    display: flex;
+    gap: 40px;
+    font-size: 1.125rem;
+}
+
+button {
+    padding: 10px 20px;
+    padding-inline: 50px;
+    border-radius: 20px 20px 20px 20px;
+    color: white;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    scale: 1.1;
+}
+/* Porfolio End */
+
+/* Contact */
+section.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.judulkontak > p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding-block: 20px;
+}
+
+.contact > .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 90px;
+    border-radius: 10px;
+    background-color: white;
+    padding-inline: 30px;
+}
+
+.contact .form > .formarea {
+    background-color: white;
+    box-shadow: 0px 0px 1px 1px #bdbdbd;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.detailform input {
+    width: 100%;
+    background: transparent;
+    color: black;
+    border: 2px solid #bdbdbd;
+    border-radius: 7px;
+    padding: 5px;
+}
+div.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+button.submit {
+    justify-content: center;
+    background-color: #02a6e3;
+    border: 0;
+    padding: 15px 50px;
+    border-radius: 40px;
+}
+
+textarea {
+    width: 100%;
+    background: transparent;
+    color: black;
+    border-radius: 10px;
+    border-color: #bdbdbd;
+    border-width: 2px;
+    padding: 5px;
+}
+
+label {
+    color: black;
+    line-height: 40px;
+}
+/* Contact End */
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f5f9;
+    padding-block: 40px;
+}
+/* Footer End */
+
+/* Media Query */
+@media screen and (max-width: 1023px) {
+    .portfolio > .konten {
+        margin-inline: -10px;
+    }
+    .portfolio .judulportfolio {
+        padding-inline: 0;
+    }
+    .form {
+        flex-direction: column;
+    }
+    .form > aside {
+        width: 100%;
+    }
+    .form aside > img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        display: none;
+    }
+    .about {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section.portfolio {
+        margin-inline: 20px;
+    }
+    .about article div.judul > h1 {
+        font-size: 2rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .form aside > .img {
+        width: 50px;
+    }
+}
+/* Media Query End */

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elang's Website</title>
+        <link rel="stylesheet" href="./assets/style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header class="navbarcontainer">
+            <nav>
+                <div class="navlogo">
+                    <img src="./assets/img/reactlogo.png" width="40px"/>
+                    <a style="font-weight: bold">Elang</a>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Navbar End-->
+
+        <!-- Main -->
+        <main>
+            <!-- About -->
+            <section id="about" class="about">
+                <article>
+                    <div class="judul">
+                        <h1>Hi, Im Elang<br>ReactJS Developer</h1>
+                    </div>
+                    <div>
+                        <p class="deskripsi">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Sed vulputate massa sit amet molestie pulvinar. 
+                            Integer non mauris posuere, mollis urna molestie, lobortis mi. 
+                            Nunc ornare tellus neque, eu sollicitudin nisi tristique eget. 
+                            Donec vel sem odio. Nam mattis mauris mauris, ut sagittis justo accumsan vel.
+                        </p>
+                    </div>
+                </article>
+                <aside class="fotoprofil">
+                    <img src="./assets/img/foto.jpg" width="10px" style="scale: 0.7;"/>
+                </aside>
+            </section>
+            <!-- About End -->
+
+            <!-- Social Media -->
+            <aside>
+                <div class="social-media">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-github"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                  </ul>
+                </div>
+            </aside>
+            <!-- Social Media End -->
+
+            <!-- Portfolio -->
+            <section class="portfolio" id="portfolio">
+                <div class="judulportfolio">
+                    <p style="font-weight: bold;">Portfolio</p>
+                    <a href="#" style="color: #00a8cc">View All</a>
+                </div>
+                <div class="konten">
+                    <!-- portfolio 1 -->
+                    <article>
+                        <div class="konten">
+                            <div class="judulkonten">
+                                <h1 style="font-size: 1.5rem">
+                                    Making a Showreel Video
+                                </h1>
+                            </div>
+                            <div class="tanggalkonten">
+                                <p>20 Oktober 2020</p>
+                                <p>|</p>
+                                <p>Adobe After Effect, Adobe Premiere</p>
+                            </div>
+                            <div class="deskripsikonten">
+                                <p>
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                                    amet sint. Velit officia consequat duis enim velit mollit.
+                                    Exercitation veniam consequat sunt nostrud amet.
+                                </p>
+                            </div>
+                            <div class="button">
+                                <button style="background-color: #02a6e3" class="see">See</button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Portfolio 1 End -->
+
+                    <!-- Portfolio 2 -->
+                    <article>
+                        <div class="konten">
+                            <div class="judulkonten">
+                                <h1 style="font-size: 1.5rem">
+                                    Making an art illustration
+                                </h1>
+                            </div>
+                            <div class="tanggalkonten">
+                                <p>9 November 2020</p>
+                                <p>|</p>
+                                <p>Adobe Illustrator, Adobe Photoshop</p>
+                            </div>
+                            <div class="deskripsikonten">
+                                <p>
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                                    amet sint. Velit officia consequat duis enim velit mollit.
+                                    Exercitation veniam consequat sunt nostrud amet.
+                                </p>
+                            </div>
+                            <div class="button">
+                                <button style="background-color: #02a6e3" class="see">See</button>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Portfolio 2 End -->
+                </div>
+            </section> 
+            <!-- Portfolio End -->
+
+            <!-- Contact -->
+            <section class="contact" id="contact">
+                <div class="judulkontak">
+                    <p style="font-weight: bold;">Contact Me</p>
+                </div>
+                <div class="form">
+                    <aside>
+                        <img src="./assets/img/formdesign.png" width="600px"/>
+                    </aside>
+                    <form action="#" method="post" class="formarea">
+                        <div class="detailform">
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" name="name"><br>
+                            
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" name="email"><br>
+                            
+                            <label for="msg">Message</label><br>
+                            <textarea id="msg" name="msg" rows="5" cols="40"></textarea><br>
+                            
+                            <div class="btn">
+                                <button type="submit" class="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!-- Contact End -->       
+        </main>
+        <!-- Main End -->
+
+        <!-- Footer -->
+        <footer>
+            <p style="font-weight: bold">Copyright &copy; 2023 Elang</p>
+        </footer>
+        <!-- Footer End -->            
+    </body>
+</html>

@@ -295,7 +295,13 @@ footer {
         width: 100%;
     }
     .form aside > img {
-        width: 500px;
+        width: 400px;
+    }
+    header nav > .navlogo {
+        margin-inline: -40px;
+    }
+    .form > .formarea {
+        width: 350px;
     }
 }
 
@@ -318,8 +324,14 @@ footer {
     h1 {
         font-size: 2rem;
     }
-    .form aside > .img {
-        width: 50px;
+     .form > aside {
+        width: 100%;
+    }
+    .form aside > img {
+        width: 350px;
+    }
+    .form > .formarea {
+        width: 300px;
     }
 }
 /* Media Query End */
